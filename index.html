@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sweath Kumar Gopi | Creative Developer</title>
+  <meta name="description" content="Sweath Kumar Gopi is a Software Development Engineer and creative developer who turns curiosity into products, experiences and ideas that make a difference.">
+  <meta name="theme-color" content="#07080b">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://sweathkumar.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sweath Kumar Gopi | Creative Developer">
+  <meta property="og:description" content="Curiosity is my starting point. Creation is my language.">
+  <meta property="og:url" content="https://sweathkumar.com/">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sweath Kumar Gopi",
+    "url": "https://sweathkumar.com/",
+    "jobTitle": "Software Development Engineer",
+    "description": "Creative developer, technology enthusiast and product builder.",
+    "knowsAbout": ["Software development", "Product design", "Artificial intelligence", "Entrepreneurship", "Transportation systems"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" } }
+  </script>
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" crossorigin>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite (Lucide-style, 24px grid, stroke-based) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.9 14.1 8.5 19l-1.4-4.9L2 12.5l5.1-1.4L8.5 6l1.4 5.1 5.1 1.4z"/><path d="M18 3v4"/><path d="M16 5h4"/><path d="M19 16v3"/><path d="M17.5 17.5h3"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.8 5.4a2 2 0 0 1-1.28 1.28l-5.4 1.8 1.8-5.4a2 2 0 0 1 1.28-1.28z"/></symbol>
+      <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></symbol>
+      <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M22 12h-4"/><path d="M6 12H2"/><path d="M12 6V2"/><path d="M12 22v-4"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"/><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/><path d="m18 14 4 4-4 4"/></symbol>
+      <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+      <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.13-.29-.29-.44-.65-.44-1.12a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C21.97 6.01 17.46 2 12 2z"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+      <symbol id="i-train" viewBox="0 0 24 24"><path d="M8 3.1V7a4 4 0 0 0 8 0V3.1"/><path d="m9 15-1-1"/><path d="m15 15 1-1"/><path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z"/><path d="m8 19-2 3"/><path d="m16 19 2 3"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 9h16"/><path d="M4 15h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+      <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></symbol>
+      <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M21 14v.01"/><path d="M21 21h-4v-4"/><path d="M14 21v.01"/></symbol>
+      <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M10 2v7.31"/><path d="M14 9.3V2"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></symbol>
+      <symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.37 8.37a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.91-1.91A2 2 0 0 1 19 8.17V7l-2.26-2.26a6 6 0 0 0-4.2-1.76L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.17a2 2 0 0 1 1.42.59L18.5 14.5"/></symbol>
+      <symbol id="i-trending" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2c.5 5 5 9.5 10 10-5 .5-9.5 5-10 10-.5-5-5-9.5-10-10 5-.5 9.5-5 10-10z"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-name">
+        <span class="loader-word"><span>Imagine</span></span>
+        <span class="loader-word"><span>Experiment</span></span>
+        <span class="loader-word"><span>Build</span></span>
+      </div>
+      <div class="loader-count mono"><span data-loader-count>000</span></div>
+      <div class="loader-bar"><span data-loader-bar></span></div>
+    </div>
+  </div>
+
+  <!-- 3D stage -->
+  <canvas class="stage" aria-hidden="true"></canvas>
+  <div class="stage-fallback" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"><span class="cursor-label"></span></div>
+    <div class="cursor-dot"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav">
+    <a class="nav-logo" href="#top" aria-label="Sweath Kumar Gopi, back to top" data-magnetic>
+      <span class="logo-mark">SK</span>
+      <span class="logo-text">Sweath Kumar<span class="muted"> Gopi</span></span>
+    </a>
+    <div class="nav-status mono" aria-hidden="true">
+      <span class="nav-index" data-nav-index>00</span>
+      <span class="nav-sep"></span>
+      <span class="nav-name"><span data-nav-name>Hello</span></span>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-ghost nav-talk" href="#contact" data-magnetic>
+        <span>Let's talk</span>
+        <svg class="icon"><use href="#i-arrow-up-right"/></svg>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-magnetic>
+        <span class="menu-btn-label">Menu</span>
+        <svg class="icon icon-open"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close"><use href="#i-x"/></svg>
+      </button>
+    </div>
+    <div class="nav-progress" aria-hidden="true"><span data-progress></span></div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Sections" hidden>
+    <div class="menu-inner">
+      <ol class="menu-list">
+        <li><a href="#intro"><span class="mono">01</span>Introduction</a></li>
+        <li><a href="#story"><span class="mono">02</span>My Story</a></li>
+        <li><a href="#drives"><span class="mono">03</span>What Drives Me</a></li>
+        <li><a href="#talents"><span class="mono">04</span>My Talents</a></li>
+        <li><a href="#universe"><span class="mono">05</span>Creative Universe</a></li>
+        <li><a href="#built"><span class="mono">06</span>Things I've Built</a></li>
+        <li><a href="#vision"><span class="mono">07</span>My Vision</a></li>
+        <li><a href="#beyond"><span class="mono">08</span>Beyond the Screen</a></li>
+      </ol>
+      <div class="menu-foot">
+        <p class="serif menu-quote">Ideas become valuable when executed.</p>
+        <a class="link-arrow" href="#contact">Start a conversation <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" data-scene data-shape="sphere" data-side="right" data-colors="#8f7bff,#4ff0d0" data-label="Hello" data-index="00">
+      <div class="container hero-grid">
+        <div class="hero-meta mono">
+          <span><svg class="icon"><use href="#i-star"/></svg> Portfolio, edition 2026</span>
+          <span class="hud" aria-hidden="true">X <b data-hud-x>+0.000</b> &nbsp; Y <b data-hud-y>+0.000</b></span>
+        </div>
+
+        <h1 class="hero-title" aria-label="Sweath Kumar Gopi">
+          <span class="hero-line" aria-hidden="true"><span data-split>Sweath</span></span>
+          <span class="hero-line hero-line-2" aria-hidden="true"><span data-split class="serif italic">Kumar Gopi</span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-tagline" data-hero-fade>
+            Curiosity is my starting point.<br>
+            <span class="serif italic accent-text">Creation is my language.</span>
+          </p>
+          <div class="hero-role" data-hero-fade>
+            <span class="mono muted">Currently</span>
+            <span class="role-rotator" data-rotator="Software Development Engineer|Creative Developer|Product Builder|Systems Thinker|Independent Learner">
+              <span class="role-word is-on">Software Development Engineer</span>
+            </span>
+          </div>
+          <a class="scroll-cue" href="#intro" data-hero-fade data-cursor="Scroll">
+            <span class="scroll-cue-ring"><svg class="icon"><use href="#i-arrow-down"/></svg></span>
+            <span class="mono">Scroll to explore</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 INTRODUCTION -->
+    <section class="section intro" id="intro" data-scene data-shape="rings" data-side="right" data-dim="0.55" data-colors="#7c8cff,#ff9d6c" data-label="Introduction" data-index="01">
+      <div class="container intro-grid">
+        <div class="intro-copy">
+          <div class="sec-label" data-reveal><span class="mono">01</span><i></i><span class="mono">Introduction</span></div>
+          <h2 class="display" data-split-words>The person behind <span class="serif italic">the code.</span></h2>
+          <p class="lead" data-reveal>
+            I'm a creative developer and technology enthusiast who believes great ideas deserve to become meaningful experiences.
+            I explore possibilities, take things apart to understand how they work, and turn complex ideas into practical solutions.
+          </p>
+          <p class="body muted" data-reveal>
+            My work lives in software, but my interests travel much further: product thinking, creative design, artificial intelligence,
+            entrepreneurship and the transportation systems that keep the world moving.
+          </p>
+          <p class="statement" data-reveal>
+            <svg class="icon"><use href="#i-quote"/></svg>
+            I don't just want to write code. I want to create products, experiences and ideas that make a difference.
+          </p>
+        </div>
+
+        <figure class="spec" data-reveal data-tilt>
+          <div class="spec-head">
+            <span class="spec-dots"><i></i><i></i><i></i></span>
+            <span class="mono">identity.config</span>
+            <span class="mono muted">read-only</span>
+          </div>
+          <ol class="spec-body mono">
+            <li data-type><span class="k">profession</span><span class="v">"Software Development Engineer"</span></li>
+            <li data-type><span class="k">creative_identity</span><span class="v">"Creative Developer"</span></li>
+            <li data-type><span class="k">thinking_style</span><span class="v">["analytical", "exploratory"]</span></li>
+            <li data-type><span class="k">interests</span><span class="v">["AI", "innovation", "design", "entrepreneurship"]</span></li>
+            <li data-type><span class="k">approach</span><span class="v fn">learn() &gt; experiment() &gt; build() &gt; improve()</span></li>
+            <li data-type><span class="k">ambition</span><span class="v">"Build meaningful products and businesses"</span></li>
+            <li data-type><span class="k">philosophy</span><span class="v">"Ideas become valuable when executed"</span></li>
+          </ol>
+          <figcaption class="spec-foot mono"><span class="pulse"></span> status: building something new</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 STORY -->
+    <section class="section story" id="story" data-scene data-shape="helix" data-side="left" data-dim="0.45" data-colors="#4ff0d0,#8f7bff" data-label="My Story" data-index="02">
+      <div class="container">
+        <div class="sec-label" data-reveal><span class="mono">02</span><i></i><span class="mono">My Story</span></div>
+        <p class="scrub" data-scrub>
+          I have always been the person who asks how things work. That question pulled me into software, but it never stayed there.
+          It led me into design, into product thinking, into artificial intelligence, into the way businesses grow and the way railway
+          networks keep a country moving. I learn most things on my own, by taking them apart, getting them wrong and trying again
+          until they are right. Today I work as a Software Development Engineer, but the title is only the part you can see.
+          Underneath it is someone who wants to turn ideas into things people actually use.
+        </p>
+
+        <div class="chapters">
+          <article class="chapter" data-reveal>
+            <span class="chapter-icon"><svg class="icon"><use href="#i-compass"/></svg></span>
+            <span class="mono muted">Chapter i</span>
+            <h3>Curiosity</h3>
+            <p>It starts with a question. Why does this work, and could it work better?</p>
+          </article>
+          <article class="chapter" data-reveal>
+            <span class="chapter-icon"><svg class="icon"><use href="#i-flask"/></svg></span>
+            <span class="mono muted">Chapter ii</span>
+            <h3>Experiments</h3>
+            <p>Unfamiliar tools and ideas, learned by doing rather than waiting to be taught.</p>
+          </article>
+          <article class="chapter" data-reveal>
+            <span class="chapter-icon"><svg class="icon"><use href="#i-hammer"/></svg></span>
+            <span class="mono muted">Chapter iii</span>
+            <h3>Creation</h3>
+            <p>Shipping real products, then refining them until they feel right to use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 DRIVES (horizontal) -->
+    <section class="drives" id="drives" data-scene data-shape="knot" data-side="center" data-dim="0.4" data-colors="#ff7cc8,#7c8cff" data-label="What Drives Me" data-index="03">
+      <div class="drives-sticky">
+        <div class="drives-track" data-htrack>
+          <div class="drives-intro">
+            <div class="sec-label"><span class="mono">03</span><i></i><span class="mono">What Drives Me</span></div>
+            <h2 class="display">Four forces behind <span class="serif italic">everything I make.</span></h2>
+            <p class="muted">Keep scrolling. Each one shapes how I think, what I choose to build and how I build it.</p>
+            <div class="drives-hint mono"><svg class="icon"><use href="#i-arrow-right"/></svg> scroll</div>
+          </div>
+
+          <article class="drive-card" data-tilt>
+            <span class="drive-bg serif italic" aria-hidden="true">Create</span>
+            <div class="drive-top"><span class="mono">01</span><span class="drive-icon"><svg class="icon"><use href="#i-sparkles"/></svg></span></div>
+            <h3>Creativity</h3>
+            <p>I look for the unconventional route. The first answer is rarely the most interesting one, so I keep looking until a solution feels both clever and simple.</p>
+          </article>
+
+          <article class="drive-card" data-tilt>
+            <span class="drive-bg serif italic" aria-hidden="true">Wonder</span>
+            <div class="drive-top"><span class="mono">02</span><span class="drive-icon"><svg class="icon"><use href="#i-compass"/></svg></span></div>
+            <h3>Curiosity</h3>
+            <p>Technology, AI, business, transportation, design. I follow interesting questions wherever they go, because the best ideas usually live where fields overlap.</p>
+          </article>
+
+          <article class="drive-card" data-tilt>
+            <span class="drive-bg serif italic" aria-hidden="true">Future</span>
+            <div class="drive-top"><span class="mono">03</span><span class="drive-icon"><svg class="icon"><use href="#i-lightbulb"/></svg></span></div>
+            <h3>Innovation</h3>
+            <p>I enjoy imagining ambitious products and then working out, step by step, how to bring them into the real world.</p>
+          </article>
+
+          <article class="drive-card" data-tilt>
+            <span class="drive-bg serif italic" aria-hidden="true">Grow</span>
+            <div class="drive-top"><span class="mono">04</span><span class="drive-icon"><svg class="icon"><use href="#i-sprout"/></svg></span></div>
+            <h3>Learning</h3>
+            <p>Every project teaches me something I did not know before. I treat learning as a habit, not a phase, and I keep raising the bar for myself.</p>
+          </article>
+        </div>
+        <div class="drives-progress" aria-hidden="true"><span data-hprogress></span></div>
+      </div>
+    </section>
+
+    <!-- 04 TALENTS -->
+    <section class="section talents" id="talents" data-scene data-shape="lattice" data-side="center" data-dim="0.32" data-colors="#c8ff5a,#4ff0d0" data-label="My Talents" data-index="04">
+      <div class="container">
+        <div class="sec-head">
+          <div class="sec-label" data-reveal><span class="mono">04</span><i></i><span class="mono">My Talents</span></div>
+          <h2 class="display" data-split-words>Eight strengths, <span class="serif italic">one way of working.</span></h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile tile-wide" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-sparkles"/></svg></span><span class="mono muted">01</span></div>
+            <h3>Creative thinking</h3>
+            <p>I approach problems from unusual angles and enjoy exploring ideas others might dismiss.</p>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-book"/></svg></span><span class="mono muted">02</span></div>
+            <h3>Independent learning</h3>
+            <p>New technologies, learned through self-study and hands-on experiments.</p>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-crosshair"/></svg></span><span class="mono muted">03</span></div>
+            <h3>Problem solving</h3>
+            <p>I dig into the hard problem instead of settling for a temporary patch.</p>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-eye"/></svg></span><span class="mono muted">04</span></div>
+            <h3>Attention to detail</h3>
+            <p>How it looks, how it feels and how it works. All three matter.</p>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-globe"/></svg></span><span class="mono muted">05</span></div>
+            <h3>Curiosity</h3>
+            <p>Interests that span technology, AI, business, transport, design and innovation.</p>
+          </article>
+          <article class="tile tile-wide tile-feature" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-target"/></svg></span><span class="mono muted">06</span></div>
+            <h3>Vision-driven thinking</h3>
+            <p>I like to picture the ambitious version of a product first, then work backwards to a plan that makes it real.</p>
+            <div class="tile-meter" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-shuffle"/></svg></span><span class="mono muted">07</span></div>
+            <h3>Adaptability</h3>
+            <p>Comfortable moving between ecosystems and picking up whatever the problem needs.</p>
+          </article>
+          <article class="tile" data-reveal data-spot>
+            <div class="tile-top"><span class="tile-icon"><svg class="icon"><use href="#i-mountain"/></svg></span><span class="mono muted">08</span></div>
+            <h3>Persistence</h3>
+            <p>I revisit difficult challenges, troubleshoot failures and keep going until it's right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 CREATIVE UNIVERSE -->
+    <section class="section universe" id="universe" data-scene data-shape="galaxy" data-side="center" data-dim="0.5" data-colors="#8f7bff,#ff9d6c" data-label="Creative Universe" data-index="05">
+      <div class="container">
+        <div class="sec-head">
+          <div class="sec-label" data-reveal><span class="mono">05</span><i></i><span class="mono">My Creative Universe</span></div>
+          <h2 class="display" data-split-words>Talents that live <span class="serif italic">beyond programming.</span></h2>
+        </div>
+
+        <div class="universe-grid">
+          <div class="orbit" data-orbit>
+            <div class="orbit-ring orbit-ring-1" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring-2" aria-hidden="true"></div>
+            <div class="orbit-core" aria-hidden="true">
+              <span class="orbit-core-glow"></span>
+              <span class="mono">core</span>
+              <span class="serif italic">curiosity</span>
+            </div>
+            <div class="orbit-nodes" role="tablist" aria-label="Talents beyond programming">
+              <button class="orbit-node" role="tab" type="button" data-node="0" aria-selected="true"><svg class="icon"><use href="#i-palette"/></svg><span>Creative</span></button>
+              <button class="orbit-node" role="tab" type="button" data-node="1" aria-selected="false"><svg class="icon"><use href="#i-rocket"/></svg><span>Venture</span></button>
+              <button class="orbit-node" role="tab" type="button" data-node="2" aria-selected="false"><svg class="icon"><use href="#i-train"/></svg><span>Systems</span></button>
+              <button class="orbit-node" role="tab" type="button" data-node="3" aria-selected="false"><svg class="icon"><use href="#i-cpu"/></svg><span>Future</span></button>
+              <button class="orbit-node" role="tab" type="button" data-node="4" aria-selected="false"><svg class="icon"><use href="#i-compass"/></svg><span>Explore</span></button>
+            </div>
+          </div>
+
+          <div class="planet" role="tabpanel" aria-live="polite" data-planet>
+            <span class="mono muted planet-count"><span data-planet-index>01</span> / 05</span>
+            <h3 class="planet-title" data-planet-title>Creative &amp; Visual Thinking</h3>
+            <p class="planet-text" data-planet-text>An eye for visual aesthetics, layouts, UI and UX, product presentation and polished digital experiences.</p>
+            <ul class="tags" data-planet-tags></ul>
+            <div class="planet-nav">
+              <button class="round-btn" type="button" data-planet-prev aria-label="Previous talent"><svg class="icon" style="transform:rotate(180deg)"><use href="#i-arrow-right"/></svg></button>
+              <button class="round-btn" type="button" data-planet-next aria-label="Next talent"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+              <span class="planet-timer" aria-hidden="true"><span data-planet-timer></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 BUILT -->
+    <section class="section built" id="built" data-scene data-shape="grid" data-side="center" data-dim="0.4" data-colors="#4ff0d0,#c8ff5a" data-label="Things I've Built" data-index="06">
+      <div class="container">
+        <div class="sec-head sec-head-row">
+          <div>
+            <div class="sec-label" data-reveal><span class="mono">06</span><i></i><span class="mono">Things I've Built</span></div>
+            <h2 class="display" data-split-words>Ideas, <span class="serif italic">shipped.</span></h2>
+          </div>
+          <p class="muted sec-aside" data-reveal>Products that show how I think: useful first, private by design and polished in the details.</p>
+        </div>
+
+        <article class="project" data-reveal>
+          <div class="project-visual" data-tilt>
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="spec-dots"><i></i><i></i><i></i></span>
+                <span class="browser-url mono"><svg class="icon"><use href="#i-shield"/></svg>tools.sweathkumar.com</span>
+              </div>
+              <div class="browser-body">
+                <div class="mini-hero">
+                  <span class="mini-pill mono">33 tools</span>
+                  <span class="mini-h">Free tools that run in your browser</span>
+                  <span class="mini-search"><span></span></span>
+                </div>
+                <div class="mini-grid">
+                  <span class="mini-tile"><svg class="icon"><use href="#i-message"/></svg>Chat analyzer</span>
+                  <span class="mini-tile"><svg class="icon"><use href="#i-file"/></svg>Merge PDF</span>
+                  <span class="mini-tile"><svg class="icon"><use href="#i-image"/></svg>Compress image</span>
+                  <span class="mini-tile"><svg class="icon"><use href="#i-qr"/></svg>UPI QR</span>
+                  <span class="mini-tile"><svg class="icon"><use href="#i-calc"/></svg>EMI calculator</span>
+                  <span class="mini-tile"><svg class="icon"><use href="#i-music"/></svg>Video to MP3</span>
+                </div>
+              </div>
+            </div>
+            <div class="float-chip chip-a mono"><svg class="icon"><use href="#i-shield"/></svg>0 uploads</div>
+            <div class="float-chip chip-b mono"><svg class="icon"><use href="#i-zap"/></svg>Runs offline</div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-kicker mono"><span class="pulse"></span> Live product</div>
+            <h3 class="project-title">ToolsApp</h3>
+            <p class="lead">
+              A collection of 33 free tools for everyday jobs, from compressing photos for exam forms to merging PDFs,
+              generating UPI payment QR codes and analysing WhatsApp chats. Everything runs on the visitor's own device,
+              so files never leave it.
+            </p>
+            <dl class="stats">
+              <div><dt class="mono muted">Tools</dt><dd data-count="33">0</dd></div>
+              <div><dt class="mono muted">Uploads</dt><dd data-count="0">0</dd></div>
+              <div><dt class="mono muted">In-browser</dt><dd><span data-count="100">0</span>%</dd></div>
+            </dl>
+            <ul class="tags">
+              <li>Astro</li><li>Web Workers</li><li>pdf-lib</li><li>PDF.js</li><li>Service Worker</li><li>Cloudflare Pages</li>
+            </ul>
+            <a class="btn btn-primary" href="https://tools.sweathkumar.com/" target="_blank" rel="noopener" data-magnetic data-cursor="Visit">
+              <span>Visit the live site</span><svg class="icon"><use href="#i-arrow-up-right"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <div class="modules">
+          <a class="module" href="https://tools.sweathkumar.com/whatsapp-chat-analyzer/" target="_blank" rel="noopener" data-reveal data-spot data-cursor="Open">
+            <span class="tile-icon"><svg class="icon"><use href="#i-message"/></svg></span>
+            <h4>WhatsApp Chat Analyzer</h4>
+            <p>A tabbed dashboard with charts, themed cards and a couple report card for two-person chats.</p>
+            <svg class="icon module-arrow"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <a class="module" href="https://tools.sweathkumar.com/merge-pdf/" target="_blank" rel="noopener" data-reveal data-spot data-cursor="Open">
+            <span class="tile-icon"><svg class="icon"><use href="#i-file"/></svg></span>
+            <h4>PDF suite</h4>
+            <p>Merge, split, rotate, delete pages and convert, all processed locally in a Web Worker.</p>
+            <svg class="icon module-arrow"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <a class="module" href="https://tools.sweathkumar.com/compress-image/" target="_blank" rel="noopener" data-reveal data-spot data-cursor="Open">
+            <span class="tile-icon"><svg class="icon"><use href="#i-image"/></svg></span>
+            <h4>Image studio</h4>
+            <p>Compress, resize, rotate and convert images without a single byte leaving the device.</p>
+            <svg class="icon module-arrow"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <div class="module module-lab" data-reveal data-spot>
+            <span class="tile-icon"><svg class="icon"><use href="#i-flask"/></svg></span>
+            <h4>In the lab</h4>
+            <p>The next idea is already taking shape. Ask me about it.</p>
+            <span class="lab-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 VISION -->
+    <section class="section vision" id="vision" data-scene data-shape="network" data-side="right" data-dim="0.5" data-colors="#ff9d6c,#8f7bff" data-label="My Vision" data-index="07">
+      <div class="container vision-grid">
+        <div class="vision-copy">
+          <div class="sec-label" data-reveal><span class="mono">07</span><i></i><span class="mono">My Vision</span></div>
+          <h2 class="display" data-split-words>Build meaningful products, <span class="serif italic">and the businesses behind them.</span></h2>
+          <p class="lead" data-reveal>
+            My ambition is to move from building features to building products, and from building products to building ventures.
+            Things that solve real problems, last, and quietly improve everyday life.
+          </p>
+          <p class="body muted" data-reveal>
+            I am especially drawn to intelligent applications, automation, and the large interconnected systems, like transport
+            networks, where good software can make a visible difference.
+          </p>
+        </div>
+
+        <div class="loop" data-reveal data-loop>
+          <svg class="loop-svg" viewBox="0 0 400 400" aria-hidden="true">
+            <defs>
+              <linearGradient id="loopGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff9d6c"/><stop offset="1" stop-color="#8f7bff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="150" class="loop-track"/>
+            <circle cx="200" cy="200" r="150" class="loop-dash"/>
+            <g class="loop-runner"><circle cx="200" cy="50" r="5"/></g>
+          </svg>
+          <div class="loop-center">
+            <svg class="icon"><use href="#i-infinity"/></svg>
+            <span class="mono muted">my approach</span>
+          </div>
+          <div class="loop-node" style="--a:0" data-step="0"><span class="loop-dot"><svg class="icon"><use href="#i-book"/></svg></span><b>Learn</b></div>
+          <div class="loop-node" style="--a:1" data-step="1"><span class="loop-dot"><svg class="icon"><use href="#i-flask"/></svg></span><b>Experiment</b></div>
+          <div class="loop-node" style="--a:2" data-step="2"><span class="loop-dot"><svg class="icon"><use href="#i-hammer"/></svg></span><b>Build</b></div>
+          <div class="loop-node" style="--a:3" data-step="3"><span class="loop-dot"><svg class="icon"><use href="#i-trending"/></svg></span><b>Improve</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 BEYOND -->
+    <section class="section beyond" id="beyond" data-scene data-shape="burst" data-side="center" data-dim="0.45" data-colors="#8f7bff,#4ff0d0" data-label="Beyond the Screen" data-index="08">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-row" data-marquee="1">
+          <span>Railway operations</span><svg class="icon"><use href="#i-star"/></svg>
+          <span class="serif italic">Artificial intelligence</span><svg class="icon"><use href="#i-star"/></svg>
+          <span>Product design</span><svg class="icon"><use href="#i-star"/></svg>
+          <span class="serif italic">Entrepreneurship</span><svg class="icon"><use href="#i-star"/></svg>
+          <span>Simulations</span><svg class="icon"><use href="#i-star"/></svg>
+          <span class="serif italic">Transport networks</span><svg class="icon"><use href="#i-star"/></svg>
+        </div>
+        <div class="marquee-row marquee-row-rev" data-marquee="-1">
+          <span class="serif italic">Automation</span><svg class="icon"><use href="#i-star"/></svg>
+          <span>Visual aesthetics</span><svg class="icon"><use href="#i-star"/></svg>
+          <span class="serif italic">Infrastructure</span><svg class="icon"><use href="#i-star"/></svg>
+          <span>New ventures</span><svg class="icon"><use href="#i-star"/></svg>
+          <span class="serif italic">Discovery</span><svg class="icon"><use href="#i-star"/></svg>
+          <span>Interconnected systems</span><svg class="icon"><use href="#i-star"/></svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="sec-head">
+          <div class="sec-label" data-reveal><span class="mono">08</span><i></i><span class="mono">Beyond the Screen</span></div>
+          <h2 class="display" data-split-words>What I think about <span class="serif italic">when I'm not coding.</span></h2>
+        </div>
+
+        <div class="interests">
+          <article class="interest" data-reveal data-spot>
+            <svg class="icon interest-icon"><use href="#i-train"/></svg>
+            <h3>Trains &amp; transport</h3>
+            <p>Railway operations, timetables and networks. Huge systems where every small decision ripples outward.</p>
+          </article>
+          <article class="interest" data-reveal data-spot>
+            <svg class="icon interest-icon"><use href="#i-cpu"/></svg>
+            <h3>AI &amp; automation</h3>
+            <p>How intelligent software can take the busywork out of everyday life.</p>
+          </article>
+          <article class="interest" data-reveal data-spot>
+            <svg class="icon interest-icon"><use href="#i-palette"/></svg>
+            <h3>Design &amp; aesthetics</h3>
+            <p>Layouts, typography and motion. The difference between working and wonderful.</p>
+          </article>
+          <article class="interest" data-reveal data-spot>
+            <svg class="icon interest-icon"><use href="#i-rocket"/></svg>
+            <h3>Business &amp; ventures</h3>
+            <p>Spotting opportunities and imagining how a good idea becomes a sustainable product.</p>
+          </article>
+        </div>
+
+        <blockquote class="philosophy" data-reveal>
+          <svg class="icon"><use href="#i-quote"/></svg>
+          <p class="serif">Ideas become valuable <span class="italic accent-text">when executed.</span></p>
+          <footer class="mono muted">Personal philosophy</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" data-scene data-shape="sphere" data-side="center" data-dim="0.6" data-colors="#4ff0d0,#8f7bff" data-label="Contact" data-index="09">
+      <div class="container contact-inner">
+        <span class="mono muted" data-reveal>Have an idea worth building?</span>
+        <h2 class="contact-title" data-split-words>Let's turn it into <span class="serif italic">something real.</span></h2>
+        <div class="contact-actions" data-reveal>
+          <a class="big-btn" href="#" data-email-link data-magnetic data-cursor="Write">
+            <svg class="icon"><use href="#i-mail"/></svg>
+            <span>Say hello</span>
+          </a>
+          <button class="copy-btn mono" type="button" data-copy-email hidden>
+            <svg class="icon icon-copy"><use href="#i-copy"/></svg>
+            <svg class="icon icon-check"><use href="#i-check"/></svg>
+            <span data-email-text></span>
+          </button>
+        </div>
+        <ul class="socials" data-socials></ul>
+      </div>
+
+      <footer class="footer container">
+        <span class="mono muted">&copy; <span data-year>2026</span> Sweath Kumar Gopi</span>
+        <span class="mono muted footer-time"><svg class="icon"><use href="#i-clock"/></svg><span data-clock>--:--</span></span>
+        <a class="mono footer-top" href="#top" data-magnetic>Back to top <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+      </footer>
+    </section>
+  </main>
+
+  <noscript><style>.loader{display:none}.js [data-reveal]{opacity:1;transform:none}</style></noscript>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
