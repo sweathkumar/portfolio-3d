@@ -17,6 +17,10 @@ Three.js loads from jsDelivr through the import map in `index.html` (pinned to 0
 ## Deploy (Cloudflare Pages)
 Connect this repo to Cloudflare Pages with **no build command** and the **repository root** as the output directory, then attach `sweathkumar.com`. `_headers` sets security and cache headers.
 
+## AdSense
+`ads.txt` authorises the AdSense account that runs ads on tools.sweathkumar.com (subdomains are covered by the root
+domain's ads.txt). The `google-adsense-account` meta tag in `index.html` verifies the site without loading any ads here.
+
 ## Accessibility and fallbacks
 - `prefers-reduced-motion` turns off the cursor, marquee, shimmer and auto-rotation.
 - Without WebGL the canvas is replaced by a gradient; without JavaScript all content is visible.
